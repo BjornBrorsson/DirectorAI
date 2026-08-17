@@ -1,0 +1,9 @@
+[
+  {
+    "event_id": "V_001",
+    "time_start": "00:00:01.000",
+    "time_end": "00:00:03.000",
+    "classification": "STATE_ACTION",
+    "visual_description": "Player runs through an open area."
+  }
+]

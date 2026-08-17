@@ -1,0 +1,22 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #646cff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

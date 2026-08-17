@@ -1,0 +1,16 @@
+{
+  "timeline_meta": {
+    "project_name": "apitest2",
+    "target_fps": 30.0
+  },
+  "cuts": [
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Personal Code Projects\\DirectorAI\\smoketest_output\\projects\\apitest2\\ingest\\gameplay.mp4",
+      "timeline_in": "00:00:00.000",
+      "timeline_out": "00:00:05.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:05.000"
+    }
+  ]
+}

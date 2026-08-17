@@ -1,0 +1,12 @@
+# DirectorCut-AI — Self-Improving Workspace Rules
+
+Loop every task: **ORIENT → ISOLATE → BUILD → VERIFY → RECORD**.
+
+1. **Orient**: Read `./docs/DOCUMENTATION_INDEX.md`, the matching `./docs/wiki/` page, and `./docs/MASTER_MEMORIES.md` before searching code. If missing, create it.
+2. **Isolate**: Ask for or infer a feature name; create `./tasks/<feature>/` and keep scratch work there.
+3. **Build**: edit `./src/` directly. Reuse existing patterns. Comment the *why*; match the repo's existing style.
+4. **Safety (hard rules)**: secrets in `.env`; mute outbound comms in dev; check schemas before DB work; commit/stash before large refactors.
+5. **Verify**: run it; no `assert(true)` tests; clear build/lint before "done".
+6. **Record**: update `docs/wiki/` with durable links (anchor on symbol name + `~L##` + verified date; repair on touch); update `tasks/<feature>/PROJECT_LOG.md`; record any twice-hit quirk in `docs/MASTER_MEMORIES.md`.
+
+Full blueprint: see `docs/agentic_rules_blueprint.md`.

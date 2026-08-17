@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: #111;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #646cff;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.error {
+  color: #c1121f;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
