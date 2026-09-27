@@ -1,0 +1,44 @@
+{
+  "visual_events": [
+    {
+      "event_id": "V_001",
+      "time_start": "00:00:00.000",
+      "time_end": "00:00:30.000",
+      "classification": "STATE_ACTION",
+      "visual_description": "Cinematic sequence introducing the world, characters, and an airship journey towards the burning Spire.",
+      "source_file": null
+    },
+    {
+      "event_id": "V_002",
+      "time_start": "00:00:30.000",
+      "time_end": "00:00:33.000",
+      "classification": "STATE_UI",
+      "visual_description": "Title card displaying the Slay the Spire II logo.",
+      "source_file": null
+    },
+    {
+      "event_id": "V_003",
+      "time_start": "00:00:33.000",
+      "time_end": "00:00:39.000",
+      "classification": "STATE_ACTION",
+      "visual_description": "Combat gameplay scene showing the Ironclad, Silent, and Necrobinder battling an enemy entity.",
+      "source_file": null
+    },
+    {
+      "event_id": "V_004",
+      "time_start": "00:00:39.000",
+      "time_end": "00:00:42.000",
+      "classification": "STATE_UI",
+      "visual_description": "Early Access 2025 announcement text screen.",
+      "source_file": null
+    },
+    {
+      "event_id": "V_005",
+      "time_start": "00:00:42.000",
+      "time_end": "00:00:48.000",
+      "classification": "STATE_ACTION",
+      "visual_description": "Teaser ending sequence featuring glowing fangs in darkness with subtitle greeting.",
+      "source_file": null
+    }
+  ]
+}

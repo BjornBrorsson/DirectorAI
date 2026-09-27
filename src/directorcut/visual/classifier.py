@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from pydantic import BaseModel
 
 from directorcut.config import Settings
@@ -14,7 +16,9 @@ logger = get_logger(__name__)
 
 
 PROMPT = """You are a gameplay video analyst.
-Given a sequence of 1-FPS frames, identify contiguous gameplay state events.
+Given a sequence of frames sampled every {interval} second(s) (frame i
+shows second i*{interval} of this segment), identify contiguous gameplay
+state events and report their start/end in SECONDS.
 
 Classifications:
 - STATE_UI: inventory menus, vendor windows, skill selection lists
@@ -34,14 +38,17 @@ def classify_visual(
     chunk: VideoChunk,
     frames: list[bytes],
     settings: Settings,
+    source_file: Path | None = None,
+    sample_interval_s: float = 1.0,
 ) -> list[VisualEvent]:
     """Classify visual state events in a chunk."""
     client = GeminiClient(settings)
     result = client.call(
-        prompt=PROMPT,
+        prompt=PROMPT.format(interval=f"{sample_interval_s:g}"),
         media=frames,
         response_model=_VisualEventList,
         dev_mode_override=_fake_visual(frames),
+        task="visual",
     )
     # Shift event timecodes by chunk start.
     from directorcut.utils import format_timecode, parse_timecode
@@ -56,6 +63,7 @@ def classify_visual(
                 time_end=format_timecode(end),
                 classification=ev.classification,
                 visual_description=ev.visual_description,
+                source_file=source_file or chunk.source_path,
             )
         )
     logger.info("Classified %d visual event(s) in chunk %d", len(shifted), chunk.index)

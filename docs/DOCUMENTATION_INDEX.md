@@ -21,6 +21,12 @@
 * [Pass 2: Visual structural logger](./wiki/pass2_visual.md)
 * [Pass 3: Assembly director](./wiki/pass3_assembly.md)
 * [FCPXML conformer](./wiki/fcpxml_conformer.md)
+* [NLE target matrix](./wiki/nle_targets.md) — Resolve/FCPX/Premiere/CapCut compat
+* [Resolve native conform](./wiki/resolve_native.md) — DaVinciResolveScript spike: build timelines via the scripting API instead of FCPXML import
+* [Creator export pack](./wiki/export_pack.md) — captions, chapters, thumbnails under `pack/`
+* [Whisper STT](./wiki/stt_whisper.md) — local faster-whisper fallback for ElevenLabs
+* [Packaging & onboarding](./wiki/packaging.md) — PyInstaller binary, `directorcut setup`/`demo`, user config dir
+* [Audio design & LLM backends](./wiki/audio_design.md)
 * [CLI / local client](./wiki/cli_client.md)
 * [Safety & budget controls](./wiki/safety_budget.md)
 * [Web frontend](./wiki/web_frontend.md)

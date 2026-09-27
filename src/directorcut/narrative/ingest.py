@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -15,14 +16,29 @@ class NarrativeInput:
     has_script: bool
 
 
-def load_narrative_input(script_path: Path | None, audio_path: Path | None) -> NarrativeInput:
-    """Load script and audio inputs for the narrative pass."""
-    text = None
-    if script_path and script_path.exists():
-        with open(script_path, encoding="utf-8-sig") as f:
-            text = f.read()
+def load_narrative_input(
+    script_paths: Path | Sequence[Path] | None,
+    audio_path: Path | None,
+) -> NarrativeInput:
+    """Load script and audio inputs for the narrative pass.
+
+    Accepts one or many script paths; multiple scripts are concatenated with a
+    blank line between them so a dumped folder can carry several documents.
+    """
+    if script_paths is None:
+        paths: list[Path] = []
+    elif isinstance(script_paths, Path):
+        paths = [script_paths]
+    else:
+        paths = list(script_paths)
+
+    texts = []
+    for path in paths:
+        if path.exists():
+            texts.append(path.read_text(encoding="utf-8-sig").strip())
+    text = "\n\n".join(t for t in texts if t)
     return NarrativeInput(
-        text=text.strip() if text else None,
+        text=text or None,
         audio_path=audio_path,
-        has_script=bool(text and text.strip()),
+        has_script=bool(text),
     )

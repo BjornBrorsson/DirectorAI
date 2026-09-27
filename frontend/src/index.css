@@ -53,3 +53,170 @@ input, select, textarea {
   width: 100%;
   box-sizing: border-box;
 }
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+legend {
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0 0.4rem;
+}
+
+.asset-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.asset-row .asset-path {
+  flex: 1;
+  margin: 0;
+}
+
+.asset-row .asset-role {
+  width: 220px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.asset-row .asset-remove {
+  padding: 0.3em 0.7em;
+  flex-shrink: 0;
+}
+
+.asset-row .asset-browse {
+  padding: 0.3em 0.7em;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.asset-add {
+  font-size: 0.9em;
+  padding: 0.4em 0.9em;
+}
+
+/* Server-side file picker modal */
+.picker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.picker {
+  background: white;
+  border-radius: 12px;
+  width: min(560px, 90vw);
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.picker-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.picker-path {
+  flex: 1;
+  font-family: monospace;
+  font-size: 0.85em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  direction: rtl;
+  text-align: left;
+}
+
+.picker-close {
+  padding: 0.2em 0.6em;
+}
+
+.picker-list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.picker-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #1a1a1a;
+}
+
+.picker-item:hover {
+  background: #f0f0f5;
+}
+
+.picker-dir {
+  font-weight: 600;
+}
+
+.picker-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.picker-size {
+  color: #888;
+  flex-shrink: 0;
+}
+
+.picker-empty {
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Pipeline progress */
+.progress-now {
+  font-size: 1.05em;
+  padding: 0.6rem 0.8rem;
+  background: #f4f5ff;
+  border-radius: 8px;
+  border-left: 3px solid #646cff;
+}
+
+.progress-elapsed {
+  color: #888;
+}
+
+.progress-tick {
+  color: #646cff;
+  font-size: 0.8em;
+}
+
+.progress-log {
+  list-style: none;
+  padding: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  font-size: 0.85em;
+}
+
+.progress-log li {
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}

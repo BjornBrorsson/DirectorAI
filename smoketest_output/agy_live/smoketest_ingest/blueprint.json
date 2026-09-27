@@ -1,0 +1,112 @@
+{
+  "timeline_meta": {
+    "project_name": "smoketest_ingest",
+    "target_fps": 10.0
+  },
+  "cuts": [
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:00.000",
+      "timeline_out": "00:00:05.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:05.000"
+    },
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:05.000",
+      "timeline_out": "00:00:10.000",
+      "source_in": "00:00:05.000",
+      "source_out": "00:00:10.000"
+    },
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:10.000",
+      "timeline_out": "00:00:15.000",
+      "source_in": "00:00:10.000",
+      "source_out": "00:00:15.000"
+    },
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:15.000",
+      "timeline_out": "00:00:20.000",
+      "source_in": "00:00:15.000",
+      "source_out": "00:00:20.000"
+    },
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:20.000",
+      "timeline_out": "00:00:25.000",
+      "source_in": "00:00:20.000",
+      "source_out": "00:00:25.000"
+    },
+    {
+      "track": "V1_A1_PRIMARY",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\voiceover.mp3",
+      "timeline_in": "00:00:25.000",
+      "timeline_out": "00:00:30.000",
+      "source_in": "00:00:25.000",
+      "source_out": "00:00:30.000"
+    },
+    {
+      "track": "V2_OVERLAY_BROLL",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\images\\title.png",
+      "timeline_in": "00:00:00.000",
+      "timeline_out": "00:00:02.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:02.000"
+    },
+    {
+      "track": "V2_OVERLAY_BROLL",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\broll\\cutaway.mp4",
+      "timeline_in": "00:00:05.000",
+      "timeline_out": "00:00:08.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:03.000"
+    },
+    {
+      "track": "A2_MUSIC",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\music\\bed.mp3",
+      "timeline_in": "00:00:00.000",
+      "timeline_out": "00:00:08.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:08.000"
+    },
+    {
+      "track": "A2_MUSIC",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_output\\agy_live\\smoketest_ingest\\audio\\cue_music_001.wav",
+      "timeline_in": "00:00:08.000",
+      "timeline_out": "00:00:18.000",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:10.000"
+    },
+    {
+      "track": "A3_SFX",
+      "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_output\\agy_live\\smoketest_ingest\\audio\\cue_sfx_001.wav",
+      "timeline_in": "00:00:25.000",
+      "timeline_out": "00:00:26.500",
+      "source_in": "00:00:00.000",
+      "source_out": "00:00:01.500"
+    }
+  ],
+  "audio_cues": [
+    {
+      "cue_id": "cue_music_001",
+      "kind": "music",
+      "prompt": "Lo-fi backing track, chill mellow beat, fast and snappy rhythm",
+      "timeline_in": "00:00:08.000",
+      "timeline_out": "00:00:30.000"
+    },
+    {
+      "cue_id": "cue_sfx_001",
+      "kind": "sfx",
+      "prompt": "Fast snappy dramatic stinger accentuating emotional spike",
+      "timeline_in": "00:00:25.000",
+      "timeline_out": "00:00:26.500"
+    }
+  ]
+}

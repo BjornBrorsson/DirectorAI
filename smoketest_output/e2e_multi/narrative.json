@@ -1,0 +1,50 @@
+[
+  {
+    "node_id": "N_001",
+    "time_start": "00:00:00.000",
+    "time_end": "00:00:05.000",
+    "spoken_text": "First we boot up the game.",
+    "thematic_tag": "EXPOSITION",
+    "energy_level": "MEDIUM"
+  },
+  {
+    "node_id": "N_002",
+    "time_start": "00:00:05.000",
+    "time_end": "00:00:10.000",
+    "spoken_text": "Why didn't they tell me about this boss?!",
+    "thematic_tag": "EMOTIONAL_SPIKE",
+    "energy_level": "MEDIUM"
+  },
+  {
+    "node_id": "N_003",
+    "time_start": "00:00:10.000",
+    "time_end": "00:00:15.000",
+    "spoken_text": "I bet I can beat it on the first try.",
+    "thematic_tag": "EXPOSITION",
+    "energy_level": "MEDIUM"
+  },
+  {
+    "node_id": "N_004",
+    "time_start": "00:00:15.000",
+    "time_end": "00:00:20.000",
+    "spoken_text": "First we boot up the game.",
+    "thematic_tag": "EXPOSITION",
+    "energy_level": "MEDIUM"
+  },
+  {
+    "node_id": "N_005",
+    "time_start": "00:00:20.000",
+    "time_end": "00:00:25.000",
+    "spoken_text": "Why didn't they tell me?!",
+    "thematic_tag": "EMOTIONAL_SPIKE",
+    "energy_level": "MEDIUM"
+  },
+  {
+    "node_id": "N_006",
+    "time_start": "00:00:25.000",
+    "time_end": "00:00:30.000",
+    "spoken_text": "I bet I can beat it!",
+    "thematic_tag": "EMOTIONAL_SPIKE",
+    "energy_level": "MEDIUM"
+  }
+]

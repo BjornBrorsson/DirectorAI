@@ -1,0 +1,18 @@
+[
+  {
+    "event_id": "V_001",
+    "time_start": "00:00:00.000",
+    "time_end": "00:00:04.000",
+    "classification": "STATE_ACTION",
+    "visual_description": "Active test pattern animation with dynamic moving color bars and frame counter display.",
+    "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\aroll\\main.mp4"
+  },
+  {
+    "event_id": "V_001",
+    "time_start": "00:00:00.000",
+    "time_end": "00:00:03.000",
+    "classification": "STATE_ACTION",
+    "visual_description": "Test pattern animation showing motion elements and shifting blocks across the frame sequence.",
+    "source_file": "C:\\Coding Projects\\DirectorAI\\smoketest_ingest\\broll\\cutaway.mp4"
+  }
+]

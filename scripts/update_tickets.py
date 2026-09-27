@@ -1,7 +1,7 @@
 """Bulk update ticket statuses for the markdown board."""
 
-from pathlib import Path
 import re
+from pathlib import Path
 
 
 def main():

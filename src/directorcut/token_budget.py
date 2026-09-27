@@ -45,8 +45,12 @@ def chunk_proxy(
 ) -> list[VideoChunk]:
     """Split a proxy into chunks that fit the token budget."""
     total_frames = int(duration_seconds * fps)
-    tokens_per_frame = int(TOKENS_PER_360P_FRAME * VIDEO_TOKEN_OVERHEAD)
-    frames_per_chunk = max(1, int(max_tokens // tokens_per_frame))
+    # Keep the untruncated float product here: sizing chunks with int(276.15)
+    # lets a max-capacity chunk estimate ~950,568 tokens - just over the
+    # 950,000 ceiling - so borderline videos died at check_token_budget.
+    frames_per_chunk = max(
+        1, int(max_tokens / (TOKENS_PER_360P_FRAME * VIDEO_TOKEN_OVERHEAD))
+    )
     seconds_per_chunk = frames_per_chunk / fps
 
     chunks: list[VideoChunk] = []
